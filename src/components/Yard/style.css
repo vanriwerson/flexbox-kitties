@@ -1,0 +1,25 @@
+.yard {
+  background-color: rgb(93, 173, 86);
+  border-radius: 20px;
+  height: 520px;
+  position: relative;
+  width: 520px;
+}
+
+.cats-container,
+.boxes-container {
+  height: 100%;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@media (max-width: 840px) {
+  .yard {
+    height: 320px;
+    margin: 0 auto 20px auto;
+    width: 320px;
+  }
+}
