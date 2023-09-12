@@ -1,0 +1,18 @@
+.game-container {
+  background-color: var(--main-txt);
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  height: fit-content;
+  justify-content: space-between;
+  margin: 20px;
+  max-width: 1080px;
+  padding: 20px;
+  width: 100%;
+}
+
+@media (max-width: 840px) {
+  .game-container {
+    justify-content: center;
+  }
+}
