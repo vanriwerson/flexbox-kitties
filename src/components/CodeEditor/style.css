@@ -1,0 +1,73 @@
+:root {
+  --css-selector: rgb(215 150 85);
+  --prop: rgb(155 215 255);
+  --rows-bg: rgb(51 51 51);
+  --value: rgb(255 135 90);
+}
+
+.editor-container {
+  background-color: var(--main-bg);
+  border-radius: 20px;
+  display: flex;
+  height: fit-content;
+  width: 500px;
+  position: relative;
+}
+
+.rows-container {
+  align-items: flex-end;
+  background-color: var(--rows-bg);
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  line-height: 1.5rem;
+  padding: 20px 0;
+}
+
+.rows-container span {
+  padding: 0 8px;
+}
+
+.code-container {
+  flex-grow: 1;
+  line-height: 1.5rem;
+  padding: 20px 8px;
+  text-align: left;
+}
+
+.css-selector {
+  color: var(--css-selector);
+}
+
+.indented {
+  margin-left: 20px;
+}
+
+.prop {
+  color: var(--prop);
+  margin-right: 8px;
+}
+
+.value {
+  color: var(--value);
+}
+
+.user-answer {
+  background-color: var(--main-txt);
+  border-radius: 8px;
+  color: var(--main-bg);
+  height: fit-content;
+  line-height: 1.5rem;
+  margin: 0 12px;
+  padding: 0 8px;
+  vertical-align: bottom;
+}
+
+@media (max-width: 840px) {
+  .editor-container {
+    margin: auto;
+    width: 320px;
+  }
+}
